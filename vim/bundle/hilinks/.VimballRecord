@@ -1,0 +1,1 @@
+hilinks.vba: call delete('/gsa/rtpgsa-h2/14/jtingen/vim/.vim/bundle/hilinks//plugin/hilinks.vim')|call delete('/gsa/rtpgsa-h2/14/jtingen/vim/.vim/bundle/hilinks//doc/hilinks.txt')

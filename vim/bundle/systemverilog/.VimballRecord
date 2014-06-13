@@ -1,0 +1,1 @@
+sv.vba: call delete('/usr2/jtingen/.vim/bundle/systemverilog/syntax/sv.vim')
