@@ -27,6 +27,15 @@ let g:solarized_visibility=   "normal"
 set background=light
 colorscheme solarized
 
+"airline statusbar
+set laststatus=2
+set ttimeoutlen=50
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
+"In order to see the powerline fonts, adapt the font of your terminal
+"In Gnome Terminal: "use custom font" in the profile. I use Monospace regular.
+let g:airline_powerline_fonts = 1
+
 "colors default
 "hi StatusLine ctermfg=Blue
 "hi StatusLine ctermbg=White
