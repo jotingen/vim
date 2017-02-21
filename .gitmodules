@@ -1,0 +1,30 @@
+[submodule "bundle/vim-tmux"]
+	path = bundle/vim-tmux
+	url = https://github.com/tmux-plugins/vim-tmux.git
+[submodule "bundle/verilog_systemverilog"]
+	path = bundle/verilog_systemverilog
+	url = https://github.com/vhda/verilog_systemverilog.vim.git
+[submodule "bundle/vim-pipe"]
+	path = bundle/vim-pipe
+	url = https://github.com/krisajenkins/vim-pipe.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/hilinks"]
+	path = bundle/hilinks
+	url = https://github.com/kergoth/vim-hilinks.git
+[submodule "bundle/buffet"]
+	path = bundle/buffet
+	url = https://github.com/sandeepcr529/Buffet.vim.git
+[submodule "bundle/syntastic-perl6"]
+	path = bundle/syntastic-perl6
+	url = https://github.com/nxadm/syntastic-perl6.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/vim-perl"]
+	path = bundle/vim-perl
+	url = https://github.com/vim-perl/vim-perl.git
