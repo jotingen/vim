@@ -2,60 +2,37 @@
 call pathogen#infect()
 
 " Fix the funny thing with backspace and delete not working right
-"fixdel
-"imap backspace <C-h>
-"set backspace=2
 set t_kb=
 
 " Tell VIM to check whole file before syntax highlighting
-filetype plugin on 
+filetype plugin on
 syntax on
 syntax sync fromstart
 autocmd BufEnter * :syntax sync fromstart
-autocmd BufEnter * lcd %:p:h
+"autocmd BufEnter * lcd %:p:h
 
 " Define colors
 set t_Co=256
+"Solarized
 let g:solarized_termcolors=   256
-let g:solarized_termtrans =   1  
-let g:solarized_degrade   =   0  
-let g:solarized_bold      =   1  
-let g:solarized_underline =   0  
-let g:solarized_italic    =   1  
+let g:solarized_termtrans =   1
+let g:solarized_degrade   =   0
+let g:solarized_bold      =   1
+let g:solarized_underline =   0
+let g:solarized_italic    =   1
 let g:solarized_contrast  =   "normal"
 let g:solarized_visibility=   "normal"
 set background=light
 colorscheme solarized
 
-"airline statusbar
+" Airline Statusbar
 set laststatus=2
 set ttimeoutlen=50
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tmuxline#enabled = 0
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_section_y = ''
 let g:airline_theme='solarized'
-"In order to see the powerline fonts, adapt the font of your terminal
-"In Gnome Terminal: "use custom font" in the profile. I use Monospace regular.
-let g:airline_powerline_fonts = 1
-
-"colors default
-"hi StatusLine ctermfg=Blue
-"hi StatusLine ctermbg=White
-"hi StatusLineNC ctermfg=Cyan
-"hi clear VertSplit
-"hi VertSplit ctermfg=Blue
-"hi Cursorline cterm=NONE ctermbg=7 
-"hi Error cterm=underline ctermfg=1 ctermbg=7
-"hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
-"hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
-"hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
-"hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black 
-"hi clear TabLine
-"hi clear TabLineFill
-"hi clear TabLineSel
-"hi TabLine cterm=reverse cterm=bold ctermbg=gray ctermfg=black
-"hi TabLineFill cterm=reverse cterm=bold ctermbg=gray ctermfg=black
-"hi tablinesel cterm=bold ctermbg=3 ctermfg=grey
-""hi CursorLine cterm=NONE,underline
-
 
 " Appearance
 set wildchar=<Tab> wildmenu wildmode=full "Show matches when tab completing
@@ -87,13 +64,7 @@ set undolevels=1000         " Remember more levels of undo
 au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
 
-" Indenting
-set autoindent
-set expandtab
-set tabstop=2
-set shiftwidth=2
-
-" Key Mapping                            
+" Key Mapping
 nnoremap ; :
 imap jj <Esc>
 
@@ -145,17 +116,17 @@ function! ReloadFile()
   endfunc
 
 "Force myself to not use arrow keys by remapping
-"  The `Up` arrow key deletes a blank line above the current line 
-"  (a non-empty line will not be deleted), while the `Down` arrow 
-"  key inserts a blank line above the current line. The result is 
-"  hitting `Up` or `Down` moves the current line up or down, in both 
+"  The `Up` arrow key deletes a blank line above the current line
+"  (a non-empty line will not be deleted), while the `Down` arrow
+"  key inserts a blank line above the current line. The result is
+"  hitting `Up` or `Down` moves the current line up or down, in both
 "  normal as well as insert mode.
 
-"  Typing `Ctrl-Up` and `Ctrl-Down`, instead, deletes or inserts a 
-"  blank line below the current line. The result is that the text 
+"  Typing `Ctrl-Up` and `Ctrl-Down`, instead, deletes or inserts a
+"  blank line below the current line. The result is that the text
 "  below the current line moves up or down, respectively.
 
-"  Typing `Left` de-dents the current line, while `Right` indents it. 
+"  Typing `Left` de-dents the current line, while `Right` indents it.
 "  The result is that text shifts left and right, respectively
 
 function! DelEmptyLineAbove()
@@ -243,6 +214,7 @@ function! SetArrowKeysAsTextShifters()
 call SetArrowKeysAsTextShifters()
 
 " Plugins
-let NERDTreeIgnore=['\.\d\d\d\d\d\d\d\d\d\d$', '\~$']
+map <leader>p :CtrlP<CR>
+let g:ctrlp_follow_symlinks = 1
 
 map <leader>be :Bufferlist<CR>

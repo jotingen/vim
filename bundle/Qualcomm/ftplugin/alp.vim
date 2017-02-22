@@ -18,3 +18,9 @@ augroup CursorLine
     au WinLeave *.alp setlocal nocursorline nocursorcolumn
 augroup END
 
+" Indenting
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+

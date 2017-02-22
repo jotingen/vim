@@ -17,3 +17,9 @@ augroup CursorLine
     au BufWinEnter *.pla setlocal cursorline cursorcolumn
     au WinLeave *.pla setlocal nocursorline nocursorcolumn
 augroup END
+
+" Indenting
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2

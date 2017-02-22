@@ -11,6 +11,10 @@ endif
 let b:did_ftplugin = 1
 
 " Highlight the 100th column
-if exists('+colorcolumn')
-    setlocal colorcolumn=100
-endif
+set colorcolumn=100
+
+" Indenting
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
