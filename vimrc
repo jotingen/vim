@@ -214,7 +214,17 @@ function! SetArrowKeysAsTextShifters()
 call SetArrowKeysAsTextShifters()
 
 " Plugins
-map <leader>p :CtrlP<CR>
-let g:ctrlp_follow_symlinks = 1
 
-map <leader>be :Bufferlist<CR>
+  " matchit
+  runtime macros/matchit.vim
+
+  " supertab
+  let g:SuperTabDefaultCompletionType = 'context'
+
+  " ctrlp
+  map <leader>p :CtrlP<CR>
+  let g:ctrlp_follow_symlinks = 1
+  let g:ctrlp_show_hidden = 1
+
+  " buffet
+  map <leader>be :Bufferlist<CR>
