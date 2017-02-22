@@ -9,7 +9,7 @@ filetype plugin on
 syntax on
 syntax sync fromstart
 autocmd BufEnter * :syntax sync fromstart
-"autocmd BufEnter * lcd %:p:h
+autocmd BufEnter * lcd %:p:h
 
 " Define colors
 set t_Co=256
@@ -222,7 +222,7 @@ call SetArrowKeysAsTextShifters()
   let g:SuperTabDefaultCompletionType = 'context'
 
   " ctrlp
-  map <leader>p :CtrlP<CR>
+  map <leader>p :CtrlP $WORKSPACE<CR>
   let g:ctrlp_follow_symlinks = 1
   let g:ctrlp_show_hidden = 1
 
