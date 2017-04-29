@@ -43,3 +43,6 @@
 [submodule "bundle/hl_matchit"]
 	path = bundle/hl_matchit
 	url = https://github.com/vimtaku/hl_matchit.vim.git
+[submodule "bundle/csv"]
+	path = bundle/csv
+	url = https://github.com/chrisbra/csv.vim.git
