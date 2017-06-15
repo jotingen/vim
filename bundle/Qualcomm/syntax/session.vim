@@ -17,7 +17,7 @@ syn case ignore
 " Session keywords
 syn match sessionComponent  ": \zsuvm_[^ ]*"
 syn match sessionCyc "UVM_INFO\( @ [0-9][0-9]*\)\="
-syn match sessionIntf "\[\([a-zA-Z][=a-zA-Z0-9\:_\.{}#/\(\[.\{-}\]\)]* *\)\=\]"
+syn match sessionIntf "\[\([a-zA-Z][=a-zA-Z0-9\:_\.{}@#/\(\[.\{-}\]\)]* *\)\=\]"
 syn match sessionError "\(UVM_ERROR\|UVM_FATAL\)\( @ [0-9][0-9]*\)\="
 syn match sessionWarning "\(UVM_WARNING\)\( @ [0-9][0-9]*\)\="
 syn match sessionWarning "\(WARNING\)"
