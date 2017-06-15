@@ -1,5 +1,6 @@
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
 
 "define :Tidy command to run perltidy on visual selection || entire buffer"
 command! -range=% -nargs=* Tidy <line1>,<line2>!perltidy -pbp

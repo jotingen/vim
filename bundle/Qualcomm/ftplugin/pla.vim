@@ -10,6 +10,8 @@ endif
 " Don't load another plugin for this buffer
 let b:did_ftplugin = 1
 
+autocmd BufEnter pla :syn sync fromstart
+
 augroup CursorLine
     au!
     au VimEnter *.pla setlocal cursorline cursorcolumn

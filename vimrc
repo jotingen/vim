@@ -7,8 +7,10 @@ set t_kb=
 " Tell VIM to check whole file before syntax highlighting
 filetype plugin on
 syntax on
-syntax sync fromstart
-autocmd BufEnter * :syntax sync fromstart
+" syntax sync fromstart
+" autocmd BufEnter * :syntax sync fromstart
+
+" Change directory to the file's
 autocmd BufEnter * lcd %:p:h
 
 " Define colors
@@ -29,6 +31,7 @@ colorscheme solarized
 set laststatus=2
 set ttimeoutlen=50
 let g:airline#extensions#tmuxline#enabled = 0
+let g:airline#extensions#whitespace#enabled = 0
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_section_y = ''
