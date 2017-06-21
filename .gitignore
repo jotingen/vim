@@ -1,5 +1,7 @@
 **/*~
 **/*.sw[a-z]
+*.sw[a-z]
 
 view/*
 .netrwhist
+*.sw[a-z]

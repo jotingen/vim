@@ -1,5 +1,5 @@
-" Session filetype plugin file
-" Language:    session.log
+" Perl6 filetype plugin file
+" Language:    perl6
 " Maintainer:  James Tingen <jtingen@qti.qualcomm.com>
 
 " Only do this when not done yet for this buffer
@@ -10,20 +10,8 @@ endif
 " Don't load another plugin for this buffer
 let b:did_ftplugin = 1
 
-autocmd BufEnter session :syn sync minlines=200
-
-" Source Garretts filterer
-source /usr2/gmd/.vim/plugin/session_utils.vim
-
-
-
-
-
-
-
-
-
-
-
-
-
+" Indenting
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
