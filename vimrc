@@ -231,3 +231,14 @@ call SetArrowKeysAsTextShifters()
 
   " buffet
   map <leader>be :Bufferlist<CR>
+
+" GUI
+if has("gui_running")
+  set guifont=Hack
+  set guioptions-=m  "remove menu bar
+  set guioptions-=T  "remove toolbar
+  set guioptions-=r  "remove right-hand scroll bar
+  set guioptions-=L  "remove left-hand scroll bar
+  "Dont move cursor
+  nnoremap <LeftMouse> ma<LeftMouse>`a 
+endif
