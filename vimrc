@@ -6,6 +6,7 @@ set t_kb=
 
 " Tell VIM to check whole file before syntax highlighting
 filetype plugin on
+filetype plugin indent on
 syntax on
 " syntax sync fromstart
 " autocmd BufEnter * :syntax sync fromstart
@@ -24,7 +25,7 @@ let g:solarized_underline =   0
 let g:solarized_italic    =   1
 let g:solarized_contrast  =   "normal"
 let g:solarized_visibility=   "normal"
-set background=light
+set background=dark
 colorscheme solarized
 
 " Airline Statusbar
