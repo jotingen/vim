@@ -4,6 +4,8 @@ call pathogen#infect()
 " Fix the funny thing with backspace and delete not working right
 set t_kb=
 
+set encoding=utf-8
+
 " Tell VIM to check whole file before syntax highlighting
 filetype plugin on
 syntax on
@@ -24,16 +26,19 @@ let g:solarized_underline =   0
 let g:solarized_italic    =   1
 let g:solarized_contrast  =   "normal"
 let g:solarized_visibility=   "normal"
-set background=light
+set background=dark
 colorscheme solarized
 
 " Airline Statusbar
 set laststatus=2
 set ttimeoutlen=50
+let g:Powerline_symbols = 'unicode'
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 let g:airline_section_y = ''
 let g:airline_theme='solarized'
 
